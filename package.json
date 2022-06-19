@@ -8,17 +8,10 @@
     "preview": "vite preview",
     "test": "jest",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
-    "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'",
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "lint-staged": "lint-staged",
-    "prepare": "husky install .husky",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
-  },
-  "lint-staged": {
-    "*.ts": [
-      "yarn lint:fix"
-    ]
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
@@ -50,7 +43,6 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "husky": "^8.0.1",
     "jest": "^28.1.1",
     "lint-staged": "^13.0.2",
     "prettier": "^2.7.1",
